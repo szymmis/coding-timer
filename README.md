@@ -30,7 +30,18 @@ You can resume it by
 
 ## 📝 Documentation
 
-🚧 **Work in Progress** 🚧
+### Commands
+
+| Name                   | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| `Clear Persisted Data` | When invoked, all persisted extension data will be purged |
+
+### Configuration
+
+| Name          | Values                     | Description                                                        |
+| ------------- | -------------------------- | ------------------------------------------------------------------ |
+| `Timeout`     | number                     | After how many seconds, following last modification, timer freezes |
+| `Persistance` | _none_, _day_, _permament_ | How long should timer data be persisted in memory                  |
 
 ## 🏦 License
 
