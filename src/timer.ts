@@ -9,7 +9,7 @@ export const Timer = {
   },
 };
 
-let timeout = 5;
+let timeout = 0;
 export const Timeout = {
   reset: () => {
     timeout = Settings.getTimeout();
