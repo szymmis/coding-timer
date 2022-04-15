@@ -1,4 +1,4 @@
-# ⏳ Coding timer extension for [_`Visual Studio Code`_](https://github.com/microsoft/vscode)
+# ⏳ Coding timer [`extension`](https://marketplace.visualstudio.com/items?itemName=szymmis.coding-timer) for [_`VSCode`_](https://github.com/microsoft/vscode)
 
 ![marketplace-installs](https://img.shields.io/visual-studio-marketplace/i/szymmis.coding-timer)
 ![marketplace-version](https://img.shields.io/visual-studio-marketplace/v/szymmis.coding-timer)
