@@ -34,7 +34,7 @@ export const Storage = {
   },
   update: (context: vscode.ExtensionContext) => {
     const storage = Storage.get(context);
-    Storage.set(context, { date: storage.date, value: Timer.getValue() });
+    Storage.set(context, { date: storage.date, value: Timer.get() });
   },
   reset: (context: vscode.ExtensionContext) => {
     Storage.set(context, { date: new Date().toISOString(), value: 0 });

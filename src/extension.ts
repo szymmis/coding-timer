@@ -11,8 +11,13 @@ export function activate(context: vscode.ExtensionContext) {
 
   vscode.workspace.onDidChangeTextDocument(() => {
     Timeout.reset();
-    StatusBarItem.update(Timer.getValue());
   });
+  vscode.window.onDidChangeWindowState((e) => {
+    if (!e.focused) {
+      Timer.freeze();
+    }
+  });
+
   context.subscriptions.push(
     vscode.commands.registerCommand("coding-timer.reset", () =>
       resetTimer(context)
@@ -29,7 +34,6 @@ function tick(context: vscode.ExtensionContext) {
     Timer.increment();
     Storage.update(context);
   }
-  StatusBarItem.update(Timer.getValue());
 }
 
 function resetTimer(context: vscode.ExtensionContext) {
