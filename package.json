@@ -1,9 +1,12 @@
 {
   "name": "coding-timer",
-  "displayName": "coding-timer",
+  "displayName": "Coding Timer",
   "description": "Timer for checking how much time you spend coding",
   "publisher": "szymmis",
-  "repository": "https://github.com/szymmis/coding-timer.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szymmis/coding-timer.git"
+  },
   "version": "0.0.2",
   "license": "MIT",
   "engines": {
