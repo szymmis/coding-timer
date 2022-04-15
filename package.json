@@ -5,6 +5,7 @@
   "publisher": "szymmis",
   "repository": "https://github.com/szymmis/coding-timer.git",
   "version": "0.0.2",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.66.0"
   },
