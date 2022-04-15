@@ -1,11 +1,8 @@
 import * as vscode from "vscode";
-import { Timeout } from "./timer";
+import { Timeout, Timer } from "./timer";
 
 function create() {
-  const item = vscode.window.createStatusBarItem(
-    vscode.StatusBarAlignment.Left,
-    0
-  );
+  const item = vscode.window.createStatusBarItem();
   return item;
 }
 
@@ -31,11 +28,11 @@ export const StatusBarItem = {
   update: (timer: number) => {
     const string = formatTime(timer);
 
-    if (Timeout.isCounting()) {
-      item.text = string;
+    if (Timer.isCounting()) {
+      item.text = `$(run) ${string}`;
       item.tooltip = `Total coding time: ${string}`;
     } else {
-      item.text = `--PAUSED ${string}--`;
+      item.text = `$(debug-pause) ${string} --PAUSED--`;
       item.tooltip = "Start coding again to resume counter";
     }
   },

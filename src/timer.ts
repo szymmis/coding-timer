@@ -2,10 +2,14 @@ import { Settings } from "./settings";
 
 let timer = 0;
 export const Timer = {
-  getValue: () => timer,
-  increment: () => ++timer,
   init: (timerValue: number) => {
     timer = timerValue;
+  },
+  getValue: () => timer,
+  increment: () => ++timer,
+  isCounting: () => timeout > 0,
+  freeze: () => {
+    timeout = 0;
   },
 };
 
@@ -21,5 +25,4 @@ export const Timeout = {
     }
     return false;
   },
-  isCounting: () => timeout > 0,
 };

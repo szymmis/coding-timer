@@ -9,7 +9,10 @@ export function activate(context: vscode.ExtensionContext) {
   const storage = Storage.get(context);
   Timer.init(storage.value);
 
-  vscode.workspace.onDidChangeTextDocument(Timeout.reset);
+  vscode.workspace.onDidChangeTextDocument(() => {
+    Timeout.reset();
+    StatusBarItem.update(Timer.getValue());
+  });
   context.subscriptions.push(
     vscode.commands.registerCommand("coding-timer.reset", () =>
       resetTimer(context)
@@ -31,8 +34,8 @@ function tick(context: vscode.ExtensionContext) {
 
 function resetTimer(context: vscode.ExtensionContext) {
   Storage.reset(context);
-  Timeout.reset();
   Timer.init(0);
+  Timer.freeze();
 }
 
 // this method is called when your extension is deactivated
