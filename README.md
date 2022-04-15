@@ -1,5 +1,8 @@
 # ⏳ Coding timer extension for [_`Visual Studio Code`_](https://github.com/microsoft/vscode)
 
+![marketplace-installs](https://img.shields.io/visual-studio-marketplace/i/szymmis.coding-timer)
+![marketplace-version](https://img.shields.io/visual-studio-marketplace/v/szymmis.coding-timer)
+
 ## 💬 Introduction
 
 Have you ever wondered how much time do you spend **_actually_** coding?\
