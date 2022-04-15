@@ -15,8 +15,12 @@ This extension counts time spending on doing your actual job instead of checking
 1. Install the extension in `vscode`
 2. Set up a delay in configuration or leave it as default `(5s)`
    - This setting is responsible for the amount of time it takes to freeze your counter after last code change
-3. Every time you modify any document in `vscode` delay is reset and the counter keeps increasing
-4. When idle for enough time (haven't done any modification) the counter stops counting.
+3. Every time you modify any document in `vscode` delay is reset and the timer keeps increasing
+4. When idle for enough time (haven't done any modification) the timer stops counting.
+5. Specify persistance settings
+   - Keep data between coding session
+   - Clear persisted data on a day-to-day basis
+   - Do not persist data at all
 
 **_The goal of this tool is to show you how much time do you spend actually coding_** \
  The timer won't be resumed simply by using `vscode`\
