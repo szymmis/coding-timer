@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/szymmis/coding-timer.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "engines": {
     "vscode": "^1.66.0"
@@ -24,6 +24,18 @@
       {
         "command": "coding-timer.reset",
         "title": "Coding timer: Clear Persisted Data"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Coding timer",
+        "properties": {
+          "coding-timer.timeout": {
+            "type": "number",
+            "default": 5,
+            "description": "How many seconds after last action counter freezes"
+          }
+        }
       }
     ]
   },

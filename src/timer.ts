@@ -1,3 +1,5 @@
+import { Settings } from "./settings";
+
 let timer = 0;
 export const Timer = {
   getValue: () => timer,
@@ -10,7 +12,7 @@ export const Timer = {
 let timeout = 5;
 export const Timeout = {
   reset: () => {
-    timeout = 5;
+    timeout = Settings.getTimeout();
   },
   descrement: () => {
     if (timeout > 0) {
