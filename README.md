@@ -19,7 +19,7 @@ This extension counts time spending on doing your actual job instead of checking
 4. When idle for enough time (haven't done any modification) the counter stops counting.
 
 **_The goal of this tool is to show you how much time do you spend actually coding_** \
- The timer won't be resumed when simply by using `vscode`\
+ The timer won't be resumed simply by using `vscode`\
 You can resume it by
 
 - Modifying any file
