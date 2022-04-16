@@ -8,7 +8,7 @@
 Have you ever wondered how much time you spend **_actually_** coding?\
 This extension counts time spent on doing your actual job instead of checking out Reddit or Instagram.
 
-![Extension preview](./misc/video.gif)
+![Extension preview](images/video.gif)
 
 ## ⚙️ How does it work?
 
@@ -43,7 +43,7 @@ the next day. There are also options to either keep it continuously or to not pe
 
 ## 🏦 License
 
-[MIT](./LICENSE)
+[MIT](LICENSE)
 
 ## 🖥️ Credits
 
