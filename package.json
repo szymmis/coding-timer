@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/szymmis/coding-timer.git"
   },
-  "version": "0.0.4",
+  "version": "0.1.0",
   "license": "MIT",
   "engines": {
     "vscode": "^1.66.0"
@@ -35,7 +35,7 @@
             "default": 5,
             "description": "How many seconds after last action counter freezes"
           },
-          "coding-timer.persistance": {
+          "coding-timer.persistence": {
             "type": "string",
             "enum": [
               "none",
