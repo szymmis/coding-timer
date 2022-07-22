@@ -2,6 +2,7 @@ import * as vscode from "vscode";
 import { Timeout, Timer } from "./timer";
 import { StatusBarItem } from "./status-bar";
 import { Storage } from "./storage";
+import { Settings } from "./settings";
 
 export function activate(context: vscode.ExtensionContext) {
   StatusBarItem.init();
@@ -13,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
     Timeout.reset();
   });
   vscode.window.onDidChangeWindowState((e) => {
-    if (!e.focused) {
+    if ( Settings.getOnlyWhenTyping && !e.focused) {
       Timer.freeze();
     }
   });
