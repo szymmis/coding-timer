@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
     Timeout.reset();
   });
   vscode.window.onDidChangeWindowState((e) => {
-    if ( Settings.getOnlyWhenTyping && !e.focused) {
+    if ( Settings.getOnlyWhenFocused && !e.focused) {
       Timer.freeze();
     }
   });

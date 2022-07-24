@@ -35,10 +35,10 @@
             "default": 5,
             "description": "How many seconds after last action counter freezes"
           },
-          "coding-timer.onlyWhenTyping": {
+          "coding-timer.onlyWhenFocused": {
             "type": "boolean",
             "default": true,
-            "description": "Keep timer running even when the editor is not focused"
+            "description": "Keep timer running only when the editor is at focus"
           },
           "coding-timer.persistence": {
             "type": "string",
