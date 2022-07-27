@@ -12,7 +12,7 @@ export const Settings = {
   getPersistance: (): PersistenceType =>
     vscode.workspace.getConfiguration("coding-timer").get("persistance") ??
     PersistenceType.DAY_TO_DAY,
-  getOnlyWhenFocused: (): boolean => 
-  vscode.workspace.getConfiguration("coding-timer").get("onlyWhenFocused") ?? true,
+  getFreezeOnWindowBlur: (): boolean => 
+  vscode.workspace.getConfiguration("coding-timer").get("freezeOnWindowBlur") ?? true,
   
 };

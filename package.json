@@ -35,10 +35,10 @@
             "default": 5,
             "description": "How many seconds after last action counter freezes"
           },
-          "coding-timer.onlyWhenFocused": {
+          "coding-timer.freezeOnWindowBlur": {
             "type": "boolean",
             "default": true,
-            "description": "Keep timer running only when the editor is at focus"
+            "description": "Freeze timer on window focus loss"
           },
           "coding-timer.persistence": {
             "type": "string",
