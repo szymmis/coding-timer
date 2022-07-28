@@ -36,10 +36,11 @@ the next day. There are also options to either keep it continuously or to not pe
 
 ### Configuration
 
-| Name          | Values                     | Description                                                        |
-| ------------- | -------------------------- | ------------------------------------------------------------------ |
-| `Timeout`     | number                     | After how many seconds, following last modification, timer freezes |
-| `Persistence` | _none_, _day_, _permament_ | How long should timer data be persisted in memory                  |
+| Name                    | Values                     | Description                                                        |
+| ----------------------- | -------------------------- | ------------------------------------------------------------------ |
+| `Timeout`               | number                     | After how many seconds, following last modification, timer freezes |
+| `Persistence`           | _none_, _day_, _permament_ | How long should timer data be persisted in memory                  |
+| `Freeze on window blur` | boolean                    | Freeze timer on window focus loss                                  |
 
 ## 🏦 License
 
